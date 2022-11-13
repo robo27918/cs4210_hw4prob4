@@ -108,6 +108,7 @@ for h in n_hidden:                          #looking or the best parameters w.r.
 
 #After generating all neural networks, print the final weights and biases of the best model
 print("the hyperparameters of the best model are", store_best_model_param[-1])
+print("\nHighest accuracy was: " + str(highest_accuracy))
 weights, biases = model.layers[1].get_weights()
 print(weights)
 print(biases)
